@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es2019",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "strict": true
+  },
+  "lib": [
+    "es2015"
+  ],
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    ".gtconfig",
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "tests/**/*",
+    "__tests__/**/*"
+  ],
+}
