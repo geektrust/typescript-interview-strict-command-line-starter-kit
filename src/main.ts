@@ -16,6 +16,7 @@ function main() {
    */
   for (let cmd of commands) {
     //arg will have each command passed in the command line argumens
+    //example: "ADD_ITEM PHYSICAL Shoes 100 2"
     handle(cmd);
   }
 }
@@ -33,35 +34,14 @@ function handle(cmd: string) {
   const command = inputsForOneCommand[0];
   const args = inputsForOneCommand.slice(1);
 
+  // Example:
+  // command = "ADD_ITEM"
+  // args = ["PHYSICAL", "Shoes", "100", "2"]
+
   console.log("Command:", command);
   console.log("Arguments:", args);
 
-  switch (command) {
-    case "ADD_ITEM":
-      // Example:
-      // args = ["PHYSICAL", "Shoes", "100", "2"]
-      break;
-
-    case "ADD_PROMOTION":
-      // Example:
-      // args = ["PERCENTAGE", "20"]
-      break;
-
-    case "SET_SHIPPING":
-      // Example:
-      // args = ["STANDARD"]
-      break;
-
-    case "TOTAL":
-      // args = []
-      break;
-
-    default:
-      // Handle unknown commands
-      break;
-  }
-
-  // TODO: Implement the command handling logic.
+  // TODO: Implement the command handling logic and print the output.
 }
 
 main();
