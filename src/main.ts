@@ -29,8 +29,39 @@ function main() {
  */
 function handle(cmd: string) {
   const inputsForOneCommand: string[] = cmd.split(" ");
-  console.log(inputsForOneCommand);
-  //TODO: implement the logic to handle each input
+
+  const command = inputsForOneCommand[0];
+  const args = inputsForOneCommand.slice(1);
+
+  console.log("Command:", command);
+  console.log("Arguments:", args);
+
+  switch (command) {
+    case "ADD_ITEM":
+      // Example:
+      // args = ["PHYSICAL", "Shoes", "100", "2"]
+      break;
+
+    case "ADD_PROMOTION":
+      // Example:
+      // args = ["PERCENTAGE", "20"]
+      break;
+
+    case "SET_SHIPPING":
+      // Example:
+      // args = ["STANDARD"]
+      break;
+
+    case "TOTAL":
+      // args = []
+      break;
+
+    default:
+      // Handle unknown commands
+      break;
+  }
+
+  // TODO: Implement the command handling logic.
 }
 
 main();
